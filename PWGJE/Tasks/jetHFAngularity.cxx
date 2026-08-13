@@ -196,7 +196,7 @@ struct JetHFAngularityTask {
   // DATA
 
   using D0CandidatesData = aod::CandidatesD0Data;
-  
+
   using D0DataJets = soa::Join<aod::D0ChargedJets,
                                aod::D0ChargedJetConstituents>;
 
@@ -477,7 +477,7 @@ struct JetHFAngularityTask {
   }
 
   // Helper: jet invariant mass
- 
+
   template <typename TRACKS, typename CANDIDATES>
   float computeJetMass(TRACKS const& tracks,
                        CANDIDATES const& candidates,
